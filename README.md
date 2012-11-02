@@ -1,4 +1,4 @@
-[jquery.utility.js](https://github.com/haldais/jquery.utility.js) - jQuery plugin 
+[jquery.utility.js](https://github.com/Attrise/jquery.utility) - jQuery plugin 
 ==================================================
 
 目次
@@ -18,14 +18,15 @@ jquery.utility.jsはHTML、CSSコーディングを補助するjQueryのプラ�
 
 ダウンロード
 --------------------------------------
-URL:[https://github.com/haldais/jquery.utility.js](https://github.com/haldais/jquery.utility.js)
+URL:[https://github.com/Attrise/jquery.utility](https://github.com/Attrise/jquery.utility)
 
 概要
 --------------------------------------
 
 ###rollOverImages###
 
-任意のクラス名をimg要素に付与することでマウスオーバー時の画像を切替ます。デフォルトはマウスオーバー時にimgのsrc属性に指定された画像のファイル名を '_over' がついたもの切替ます。
+任意のクラス名をimg要素に付与することでマウスオーバー時の画像を切替ます。  
+デフォルトはマウスオーバー時にimgのsrc属性に指定された画像のファイル名を '_over' がついたもの切替ます。
 
 ####用例####
 
@@ -37,9 +38,11 @@ $('img.swap').rollOverImages();
 
 #####オプション#####
 
+* suffix：接尾辞(imgのファイル名語尾を_onのものと入れ替える場合)
+
 ```html
 $('img.swap').rollOverImages({
-    suffix : '_on' // imgのファイル名語尾を_onのものと入れ替える。
+    suffix : '_on'
 });
 ```
 
@@ -57,11 +60,15 @@ $('img.fade').imgFade();
 
 #####オプション#####
 
+* fadeSpeed：透明状態になるまでの秒数
+* startAlpha：アルファ状態
+* endAlpha：通常時のアルファ値
+
 ```html
 $('img.fade').imgFade({
-    fadeSpeed  : 500, // 透過状態になるまでの秒数
-    startAlpha : 0.3, // アルファ状態
-    endAlpha   : 1.0  // 通常時
+    fadeSpeed  : 500,
+    startAlpha : 0.3,
+    endAlpha   : 1.0
 });
 ```
 
@@ -80,9 +87,11 @@ $('.SameHeight').boxSameHeight();
 
 #####オプション#####
 
+* resize：(文字サイズ変更ナビ対応を行う場合は「true」を指定)
+
 ```html
 $('.SameHeight').boxSameHeight({
-    resize:true  //文字サイズ変更対応
+    resize:true
 });
 ```
 
@@ -100,9 +109,12 @@ $('a[href^="#"]').anchorScroll();
 
 #####オプション#####
 
+* duaration：目標座標までの時間
+* easing：アニメーションのイージング設定
+
 ```html
 $('a[href^="#"]').anchorScroll({
-     duaration : 1000, //目標座標までの時間
-     easing : 'easeIn' //アニメーションのイージング設定
+     duaration : 1000,
+     easing : 'easeIn'
 });
 ```
