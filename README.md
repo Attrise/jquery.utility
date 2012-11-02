@@ -32,7 +32,7 @@ URL:[https://github.com/Attrise/jquery.utility](https://github.com/Attrise/jquer
 
 #####通常#####
 
-```html
+```js
 $('img.swap').rollOverImages();
 ```
 
@@ -40,7 +40,7 @@ $('img.swap').rollOverImages();
 
 * suffix：接尾辞(imgのファイル名語尾を_onのものと入れ替える場合)
 
-```html
+```js
 $('img.swap').rollOverImages({
     suffix : '_on'
 });
@@ -54,7 +54,7 @@ $('img.swap').rollOverImages({
 
 #####通常#####
 
-```html
+```js
 $('img.fade').imgFade();
 ```
 
@@ -64,7 +64,7 @@ $('img.fade').imgFade();
 * startAlpha：アルファ状態
 * endAlpha：通常時のアルファ値
 
-```html
+```js
 $('img.fade').imgFade({
     fadeSpeed  : 500,
     startAlpha : 0.3,
@@ -80,7 +80,7 @@ $('img.fade').imgFade({
 
 #####通常#####
 
-```html
+```js
 $('.SameHeight').boxSameHeight();
 ```
 
@@ -89,7 +89,7 @@ $('.SameHeight').boxSameHeight();
 
 * resize：(文字サイズ変更ナビ対応を行う場合は「true」を指定)
 
-```html
+```js
 $('.SameHeight').boxSameHeight({
     resize:true
 });
@@ -103,7 +103,7 @@ $('.SameHeight').boxSameHeight({
 
 #####通常#####
 
-```html
+```js
 $('a[href^="#"]').anchorScroll();
 ```
 
@@ -112,7 +112,7 @@ $('a[href^="#"]').anchorScroll();
 * duaration：目標座標までの時間
 * easing：アニメーションのイージング設定
 
-```html
+```js
 $('a[href^="#"]').anchorScroll({
      duaration : 1000,
      easing : 'easeIn'
