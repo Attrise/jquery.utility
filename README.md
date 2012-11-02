@@ -31,13 +31,17 @@ URL:[https://github.com/haldais/jquery.utility.js](https://github.com/haldais/jq
 
 #####通常#####
 
-    $ $('img.swap').rollOverImages();
-   
+```html
+$('img.swap').rollOverImages();
+```
+
 #####オプション#####
 
-    $ $('img.swap').rollOverImages({
-    $     suffix : '_on' // imgのファイル名語尾を_onのものと入れ替える。
-    $ });
+```html
+$('img.swap').rollOverImages({
+    suffix : '_on' // imgのファイル名語尾を_onのものと入れ替える。
+});
+```
 
 ###imgFade###
 
@@ -47,7 +51,9 @@ URL:[https://github.com/haldais/jquery.utility.js](https://github.com/haldais/jq
 
 #####通常#####
 
-    $ $('img.fade').imgFade();
+```html
+$('img.fade').imgFade();
+```
 
 #####オプション#####
 
@@ -69,7 +75,7 @@ $('img.fade').imgFade({
 
 ```html
 $('.SameHeight').boxSameHeight();
-```html
+```
 
 
 #####オプション#####

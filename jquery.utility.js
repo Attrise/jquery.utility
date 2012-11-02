@@ -1,5 +1,6 @@
 /**
- * jquery.utility.js - jQuery plugin 
+ * jquery.utility.js - jQuery plugin
+ * https://github.com/Attrise/jquery.utility
  * 
  * Copyright (c) 2011 Attrise,Inc.
  * http://attrise.com
@@ -126,8 +127,8 @@
 })(jQuery);
 
 $(function(){
-    // $('img.swap').rollOverImages();
-    $('img.fade').imgFade({startAlpha:0});
-    $('.SameHeight').boxSameHeight();
-    $('a[href^="#"]').anchorScroll();
+    $('img.swap').rollOverImages();
+    //$('img.fade').imgFade({startAlpha:0});
+    //$('.SameHeight').boxSameHeight();
+    //$('a[href^="#"]').anchorScroll();
 });
